@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRUD" Class="DataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=IBISPC\SQLEXPRESS;Initial Catalog=CRUD;Integrated Security=True" SettingsObjectName="CRUD1.Properties.Settings" SettingsPropertyName="CRUDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CRUDTable" Member="CRUDTables">
+    <Type Name="CRUDTable">
+      <Column Name="id_productos" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_producto" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="precio_producto" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="disponibilidad_producto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion_producto" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
